@@ -58,3 +58,10 @@ for (i = 0; i < themes.person.length; i++) {
     <br><b>age:</b> ${themes.person[i].age}
       </div>`;
 }
+
+
+let sandwiches = `{ "sandwich": "hamburger", "calories": "260" }`;
+let fries = `{ "fries_size": "Large French Fries", "calories": "570" }`;
+let sand = JSON.parse(sandwiches);
+let fries2 = JSON.parse(fries);
+document.querySelector("#results1").innerHTML = `<hr> My favorite sandwich is a ${sand.sandwich} which has approximately ${sand.calories} calories, along with it I enjoy eating ${fries2.fries_size} which have about ${fries2.calories} calories`
